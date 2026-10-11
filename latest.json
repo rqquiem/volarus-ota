@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.2",
-  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.2/volarus-v1.4.2.zip",
-  "zipSha256": "47d2855306aae4b11af8fc01735dc7e5112b5cfb659c356486f327067f22042b",
-  "zipBytes": 1297681,
+  "version": "1.4.3",
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.3/volarus-v1.4.3.zip",
+  "zipSha256": "e284c225cc3fe8fc5fae73866e56135cd4c38b519e6d4e18a11ae42dcf28447e",
+  "zipBytes": 1298717,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.2 — four new sources on a shared scraper\n\n- New: four more reading sources join the library — Toonily (manhwa),\n  MangaRead (manga), ManhuaTop (manhua) and WuxiaWorld (light novel). They\n  appear alongside the sources you already browse, with the same search,\n  detail and chapter-list behaviour.\n- Improved: these four and ManhuaPlus now share one scraper built for the\n  Madara (WP-Manga) site theme, so fixes and improvements to that markup\n  benefit every one of them at once.\n- Note: no action needed on your part — just update and enjoy.\n",
-  "releasedAt": "2026-10-11T02:25:15.954Z",
-  "signature": "9rMTBN7M7qJkEsy6ff53WW+CUMg2CCdB3DK7Ov3yQbucKKgctK7ubb0pV8KtkkEgGPWQ1sG1hud/rYrZprN5Cw=="
+  "notes": "# v1.4.3 — clearer sign-in and account creation\n\n- Improved: signing in and creating an account are now two separate views on\n  both the welcome screen and the Account tab. Each view shows only the fields\n  it needs, so it is always clear whether you are signing in or registering.\n- Improved: the email and password you type are kept while you switch between\n  the two views, so you never have to retype them.\n- Fixed: on the Account tab the Sign In and Create Account buttons no longer\n  appear at the same time.\n- Note: no action needed on your part — just update and enjoy.\n",
+  "releasedAt": "2026-10-11T09:50:51.538Z",
+  "signature": "VgNo2Tuay6Vz/5EV+2tvV17KCmx/tY6tHRJNcEyTjk+zbMg8QrHKqZEIJe5SA+uTOUGkvmW2UNlXH4VUWH8jBA=="
 }
