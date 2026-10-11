@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.3",
-  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.3/volarus-v1.4.3.zip",
-  "zipSha256": "e284c225cc3fe8fc5fae73866e56135cd4c38b519e6d4e18a11ae42dcf28447e",
-  "zipBytes": 1298717,
+  "version": "1.4.4",
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.4/volarus-v1.4.4.zip",
+  "zipSha256": "3b967057a904cc5d1c18b342d1435879792d179992722d3db5634f35eafd4109",
+  "zipBytes": 1298833,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.3 — clearer sign-in and account creation\n\n- Improved: signing in and creating an account are now two separate views on\n  both the welcome screen and the Account tab. Each view shows only the fields\n  it needs, so it is always clear whether you are signing in or registering.\n- Improved: the email and password you type are kept while you switch between\n  the two views, so you never have to retype them.\n- Fixed: on the Account tab the Sign In and Create Account buttons no longer\n  appear at the same time.\n- Note: no action needed on your part — just update and enjoy.\n",
-  "releasedAt": "2026-10-11T09:50:51.538Z",
-  "signature": "VgNo2Tuay6Vz/5EV+2tvV17KCmx/tY6tHRJNcEyTjk+zbMg8QrHKqZEIJe5SA+uTOUGkvmW2UNlXH4VUWH8jBA=="
+  "notes": "# v1.4.4 - reading counts, clearer source names, and an honest progress line\n\n- Fixed: reading a chapter now always counts toward Chapters Read and EXP. Some\n  chapters open before their title has resolved; the app used to reject those\n  saves and quietly drop them, so the counters never moved. A read with an\n  unresolved title now records the chapter and its EXP, the app retries once if\n  a save is refused, and any remaining failure is logged instead of hidden.\n- Improved: the source list now uses one flat, consistent wording - \"Provider 1\"\n  through \"Provider 31\" - instead of the old \"Manga/Manhwa/Manhua Provider N\"\n  and \"Novel Provider N\" buckets, so the numbering is simple and easy to follow.\n- Fixed: the reader progress line now tracks the real end of the chapter. It\n  used to reach 100% partway through, while page images were still settling,\n  which also put it out of step with the chapter counter; it now stays in step\n  with the counter as you read to the end.\n- Note: no action needed on your part - just update and enjoy.\n",
+  "releasedAt": "2026-10-11T23:53:18.252Z",
+  "signature": "I5TYPVVaYSQJoZZj/hDRnI14AIyuH9GTL4CBDvU/b+M919caJ65sjL84ZgMCLMSI9MDDjpFIpcgbvTw0Un9MAw=="
 }
