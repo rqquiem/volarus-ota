@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.5",
+      "notes": "# v1.4.5 - Indonesian Hits restored and fresher recommendations\n\n- Fixed: the \"Indonesian Hits\" row on Home is no longer empty. When the\n  Preferred Content Region was set to a region other than Indonesian, that row\n  was filtered down to nothing; a labelled row now always shows its own sources\n  regardless of the region preference.\n- Fixed: recommendations no longer repeat the same titles across rows. One\n  series could appear in Recommended for You, Because you read, More Genre and a\n  type row at the same time; each title now appears in only one row.\n- Improved: building recommendations no longer makes a duplicate provider\n  request, so the Home rails load a little faster.\n- Note: no action needed on your part - just update and enjoy.\n",
+      "releasedAt": "2026-10-12T00:47:39.404Z"
+    },
+    {
       "version": "1.4.4",
       "notes": "# v1.4.4 - reading counts, clearer source names, and an honest progress line\n\n- Fixed: reading a chapter now always counts toward Chapters Read and EXP. Some\n  chapters open before their title has resolved; the app used to reject those\n  saves and quietly drop them, so the counters never moved. A read with an\n  unresolved title now records the chapter and its EXP, the app retries once if\n  a save is refused, and any remaining failure is logged instead of hidden.\n- Improved: the source list now uses one flat, consistent wording - \"Provider 1\"\n  through \"Provider 31\" - instead of the old \"Manga/Manhwa/Manhua Provider N\"\n  and \"Novel Provider N\" buckets, so the numbering is simple and easy to follow.\n- Fixed: the reader progress line now tracks the real end of the chapter. It\n  used to reach 100% partway through, while page images were still settling,\n  which also put it out of step with the chapter counter; it now stays in step\n  with the counter as you read to the end.\n- Note: no action needed on your part - just update and enjoy.\n",
       "releasedAt": "2026-10-11T23:53:18.252Z"
