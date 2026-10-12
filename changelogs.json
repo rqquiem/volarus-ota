@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.6",
+      "notes": "# v1.4.6 - novel text alignment persists and long novel text wraps\n\n- Fixed: the Text Align setting in the novel reader now sticks. Your choice of\n  Left, Center, Right or Justify is saved and restored, so it survives closing\n  and reopening the reader and moving between chapters; previously it reset back\n  to Left every time.\n- Fixed: long unbreakable novel text no longer runs off the edge of the reader\n  on narrow screens. Bare URLs, OCR runs without spaces and long CJK blocks now\n  wrap to the next line instead of overflowing the left or right margin.\n- Improved: the novel reader settings sheet is simpler. The Speech Engine\n  selector and the neural/system voice panels were removed; the remaining\n  reading controls - Speech Rate, Voice, Word Animation, Highlight Color and\n  Focus Mode - are unchanged.\n- Note: no action needed on your part - just update and enjoy.\n",
+      "releasedAt": "2026-10-12T02:10:27.172Z"
+    },
+    {
       "version": "1.4.5",
       "notes": "# v1.4.5 - Indonesian Hits restored and fresher recommendations\n\n- Fixed: the \"Indonesian Hits\" row on Home is no longer empty. When the\n  Preferred Content Region was set to a region other than Indonesian, that row\n  was filtered down to nothing; a labelled row now always shows its own sources\n  regardless of the region preference.\n- Fixed: recommendations no longer repeat the same titles across rows. One\n  series could appear in Recommended for You, Because you read, More Genre and a\n  type row at the same time; each title now appears in only one row.\n- Improved: building recommendations no longer makes a duplicate provider\n  request, so the Home rails load a little faster.\n- Note: no action needed on your part - just update and enjoy.\n",
       "releasedAt": "2026-10-12T00:47:39.404Z"
