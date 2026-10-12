@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.4",
-  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.4/volarus-v1.4.4.zip",
-  "zipSha256": "3b967057a904cc5d1c18b342d1435879792d179992722d3db5634f35eafd4109",
-  "zipBytes": 1298833,
+  "version": "1.4.5",
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.5/volarus-v1.4.5.zip",
+  "zipSha256": "5845f4417b0445bf8c175ae9ac47a7d2ee20f47f906e01f8e78d93d64b0b1637",
+  "zipBytes": 1298998,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.4 - reading counts, clearer source names, and an honest progress line\n\n- Fixed: reading a chapter now always counts toward Chapters Read and EXP. Some\n  chapters open before their title has resolved; the app used to reject those\n  saves and quietly drop them, so the counters never moved. A read with an\n  unresolved title now records the chapter and its EXP, the app retries once if\n  a save is refused, and any remaining failure is logged instead of hidden.\n- Improved: the source list now uses one flat, consistent wording - \"Provider 1\"\n  through \"Provider 31\" - instead of the old \"Manga/Manhwa/Manhua Provider N\"\n  and \"Novel Provider N\" buckets, so the numbering is simple and easy to follow.\n- Fixed: the reader progress line now tracks the real end of the chapter. It\n  used to reach 100% partway through, while page images were still settling,\n  which also put it out of step with the chapter counter; it now stays in step\n  with the counter as you read to the end.\n- Note: no action needed on your part - just update and enjoy.\n",
-  "releasedAt": "2026-10-11T23:53:18.252Z",
-  "signature": "I5TYPVVaYSQJoZZj/hDRnI14AIyuH9GTL4CBDvU/b+M919caJ65sjL84ZgMCLMSI9MDDjpFIpcgbvTw0Un9MAw=="
+  "notes": "# v1.4.5 - Indonesian Hits restored and fresher recommendations\n\n- Fixed: the \"Indonesian Hits\" row on Home is no longer empty. When the\n  Preferred Content Region was set to a region other than Indonesian, that row\n  was filtered down to nothing; a labelled row now always shows its own sources\n  regardless of the region preference.\n- Fixed: recommendations no longer repeat the same titles across rows. One\n  series could appear in Recommended for You, Because you read, More Genre and a\n  type row at the same time; each title now appears in only one row.\n- Improved: building recommendations no longer makes a duplicate provider\n  request, so the Home rails load a little faster.\n- Note: no action needed on your part - just update and enjoy.\n",
+  "releasedAt": "2026-10-12T00:47:39.404Z",
+  "signature": "ClOsLoPJwVmW+hs+B/qoin2BVvetIeJt9N5tf1j3IxajxYtN9jp03/Q2n49ToRoR/jLF+2nuMlxqvb5Xx8+cCA=="
 }
