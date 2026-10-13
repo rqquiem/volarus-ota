@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.7",
+      "notes": "# v1.4.7 - the app updates itself on launch\n\n- Improved: the app now updates itself when it starts. When a new signed version\n  is available it is downloaded and verified automatically in the background,\n  without slowing down startup, and applied with a single automatic restart\n  while the app is idle. If you are already using the app when the update is\n  ready, it simply shows a \"Restart to apply\" option instead of restarting.\n- Fixed: the update status now correctly reports when an update has been\n  installed and is waiting for a restart. Previously it always said nothing was\n  pending, even after an update was downloaded and verified.\n- Note: the update is still signature-verified before it is applied, and a\n  failed or interrupted update never blocks the app from starting.\n- Note: no action needed on your part - just update and enjoy.\n",
+      "releasedAt": "2026-10-13T00:15:04.497Z"
+    },
+    {
       "version": "1.4.6",
       "notes": "# v1.4.6 - novel text alignment persists and long novel text wraps\n\n- Fixed: the Text Align setting in the novel reader now sticks. Your choice of\n  Left, Center, Right or Justify is saved and restored, so it survives closing\n  and reopening the reader and moving between chapters; previously it reset back\n  to Left every time.\n- Fixed: long unbreakable novel text no longer runs off the edge of the reader\n  on narrow screens. Bare URLs, OCR runs without spaces and long CJK blocks now\n  wrap to the next line instead of overflowing the left or right margin.\n- Improved: the novel reader settings sheet is simpler. The Speech Engine\n  selector and the neural/system voice panels were removed; the remaining\n  reading controls - Speech Rate, Voice, Word Animation, Highlight Color and\n  Focus Mode - are unchanged.\n- Note: no action needed on your part - just update and enjoy.\n",
       "releasedAt": "2026-10-12T02:10:27.172Z"
