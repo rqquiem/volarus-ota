@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.8",
+      "notes": "# v1.4.8 - Indonesian Hits covers fit, reader restores to the panel you left\n\n- Fixed: the Indonesian Hits row on Home no longer shows cropped or zoomed\n  covers. That row's sources return cover art with different proportions, which\n  the shared card style was centre-cropping; the covers are now shown in full on\n  those cards.\n- Fixed: the reader now reopens on the panel you left on. Leaving mid-chapter\n  and coming back used to land on the last panel and then jump to the next\n  chapter; the saved position is now tracked per chapter and restored to the\n  correct panel, and the automatic next-chapter jump no longer fires while the\n  position is being restored.\n- Note: no action needed on your part - just update and enjoy.\n",
+      "releasedAt": "2026-10-13T01:54:14.122Z"
+    },
+    {
       "version": "1.4.7",
       "notes": "# v1.4.7 - the app updates itself on launch\n\n- Improved: the app now updates itself when it starts. When a new signed version\n  is available it is downloaded and verified automatically in the background,\n  without slowing down startup, and applied with a single automatic restart\n  while the app is idle. If you are already using the app when the update is\n  ready, it simply shows a \"Restart to apply\" option instead of restarting.\n- Fixed: the update status now correctly reports when an update has been\n  installed and is waiting for a restart. Previously it always said nothing was\n  pending, even after an update was downloaded and verified.\n- Note: the update is still signature-verified before it is applied, and a\n  failed or interrupted update never blocks the app from starting.\n- Note: no action needed on your part - just update and enjoy.\n",
       "releasedAt": "2026-10-13T00:15:04.497Z"
