@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.7",
-  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.7/volarus-v1.4.7.zip",
-  "zipSha256": "3492c81b8c79b2cf4d3c04f7f1479034acb6729df8169e9f533fa560b6556d93",
-  "zipBytes": 1298702,
+  "version": "1.4.8",
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.8/volarus-v1.4.8.zip",
+  "zipSha256": "337e841a0b09b8427f0701687ac02eec6d639a6898059a026da5ca43e64a2015",
+  "zipBytes": 1298962,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.7 - the app updates itself on launch\n\n- Improved: the app now updates itself when it starts. When a new signed version\n  is available it is downloaded and verified automatically in the background,\n  without slowing down startup, and applied with a single automatic restart\n  while the app is idle. If you are already using the app when the update is\n  ready, it simply shows a \"Restart to apply\" option instead of restarting.\n- Fixed: the update status now correctly reports when an update has been\n  installed and is waiting for a restart. Previously it always said nothing was\n  pending, even after an update was downloaded and verified.\n- Note: the update is still signature-verified before it is applied, and a\n  failed or interrupted update never blocks the app from starting.\n- Note: no action needed on your part - just update and enjoy.\n",
-  "releasedAt": "2026-10-13T00:15:04.497Z",
-  "signature": "K5mE06jqhX1RzegsqSIEVvXoOyyes7bqRAfj3tlWdkoCGP/tBSYFHEKMHohn2JF7hVmyu/mfgnaE0idDchlCAQ=="
+  "notes": "# v1.4.8 - Indonesian Hits covers fit, reader restores to the panel you left\n\n- Fixed: the Indonesian Hits row on Home no longer shows cropped or zoomed\n  covers. That row's sources return cover art with different proportions, which\n  the shared card style was centre-cropping; the covers are now shown in full on\n  those cards.\n- Fixed: the reader now reopens on the panel you left on. Leaving mid-chapter\n  and coming back used to land on the last panel and then jump to the next\n  chapter; the saved position is now tracked per chapter and restored to the\n  correct panel, and the automatic next-chapter jump no longer fires while the\n  position is being restored.\n- Note: no action needed on your part - just update and enjoy.\n",
+  "releasedAt": "2026-10-13T01:54:14.122Z",
+  "signature": "njz7lEsEBVuS7ZzD1o71RS9kjYQBNb0Fdi037xaOrbw06rGXqGwr39ki3RoDa4rcrch8HDQ3gxJgXA+84jCKBw=="
 }
