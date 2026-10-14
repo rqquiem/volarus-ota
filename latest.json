@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.8",
-  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.8/volarus-v1.4.8.zip",
-  "zipSha256": "337e841a0b09b8427f0701687ac02eec6d639a6898059a026da5ca43e64a2015",
-  "zipBytes": 1298962,
+  "version": "1.4.9",
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.9/volarus-v1.4.9.zip",
+  "zipSha256": "d9a75d6ff1737e8bd54c6361aec698200b5f0184dbe1e5308c170f11ca1f53db",
+  "zipBytes": 1299368,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.8 - Indonesian Hits covers fit, reader restores to the panel you left\n\n- Fixed: the Indonesian Hits row on Home no longer shows cropped or zoomed\n  covers. That row's sources return cover art with different proportions, which\n  the shared card style was centre-cropping; the covers are now shown in full on\n  those cards.\n- Fixed: the reader now reopens on the panel you left on. Leaving mid-chapter\n  and coming back used to land on the last panel and then jump to the next\n  chapter; the saved position is now tracked per chapter and restored to the\n  correct panel, and the automatic next-chapter jump no longer fires while the\n  position is being restored.\n- Note: no action needed on your part - just update and enjoy.\n",
-  "releasedAt": "2026-10-13T01:54:14.122Z",
-  "signature": "njz7lEsEBVuS7ZzD1o71RS9kjYQBNb0Fdi037xaOrbw06rGXqGwr39ki3RoDa4rcrch8HDQ3gxJgXA+84jCKBw=="
+  "notes": "# v1.4.9 - backend survives interrupted streams instead of crashing\n\n- Fixed: the app no longer loses every connection and its own backend on a long\n  run. A single interrupted download or response - for example a cover image the\n  phone stops mid-way - could crash the embedded backend process, after which\n  every source and the app's own interface stopped responding all at once.\n  Interrupted stream and socket events are now treated as harmless, so the\n  backend keeps running and the next request succeeds.\n- Improved: the local backend now recovers from a busy port on restart instead\n  of staying down, and holds connections with proper keep-alive timeouts so a\n  half-open connection cannot wedge it.\n- Note: no action needed on your part - just update and enjoy.\n",
+  "releasedAt": "2026-10-14T00:41:05.050Z",
+  "signature": "lTmFKixM7txPht/z4hugrQt5zFADp9zsEzp+oVujYYdYWqQGKkYMBFvyES69+KpNWVfB0bwee8N1ditUdz8xAQ=="
 }
