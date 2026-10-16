@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.10",
+      "notes": "# v1.4.10 - new Home rails, a faster app, and a glassier interface\n\n- New: five more rows on Home - Top Rated, Newest Releases, Completed Series,\n  Action, and Romance - each with its own View All page. Home is also airier,\n  with more breathing room between sections and titles.\n- Improved: switching between tabs is now instant. Tapping a tab no longer\n  re-draws the whole screen or re-fetches data that has not changed, so the\n  bottom bar and content stay smooth instead of stuttering on every switch.\n- Improved: the app now uses the iOS 26 \"Liquid Glass\" look - frosted,\n  rounded cards and bars, softer card shadows, a richer Home spotlight, and\n  animated panels that spring open and fade closed instead of snapping.\n- Improved: the reader adds a subtle page-turn animation and light haptic\n  feedback on chapter and page changes, and the bottom bar no longer covers the\n  \"Read Now\" button on a manga's page.\n- Note: no action needed on your part - just update and enjoy.\n",
+      "releasedAt": "2026-10-16T09:45:23.338Z"
+    },
+    {
       "version": "1.4.9",
       "notes": "# v1.4.9 - backend survives interrupted streams instead of crashing\n\n- Fixed: the app no longer loses every connection and its own backend on a long\n  run. A single interrupted download or response - for example a cover image the\n  phone stops mid-way - could crash the embedded backend process, after which\n  every source and the app's own interface stopped responding all at once.\n  Interrupted stream and socket events are now treated as harmless, so the\n  backend keeps running and the next request succeeds.\n- Improved: the local backend now recovers from a busy port on restart instead\n  of staying down, and holds connections with proper keep-alive timeouts so a\n  half-open connection cannot wedge it.\n- Note: no action needed on your part - just update and enjoy.\n",
       "releasedAt": "2026-10-14T00:41:05.050Z"
