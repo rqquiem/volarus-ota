@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.12",
+      "notes": "# v1.4.12 - a hotfix for empty Home rows\n\n- Fixed: Home rows could come up empty after the previous update, showing \"No\n  items found\" on every row. They now load normally again.\n- Fixed: if your device was already stuck on empty rows, it recovers on the next\n  launch - the app no longer remembers an empty result.\n- Improved: when the sources are slow, Home now offers a retry instead of\n  showing an empty row.\n- Note: no action needed on your part - just update.\n",
+      "releasedAt": "2026-10-17T22:41:45.341Z"
+    },
+    {
       "version": "1.4.11",
       "notes": "# v1.4.11 - a faster cold start and a more compact carousel\n\n- Improved: Home opens noticeably faster from a cold start. The app now warms the\n  right data before you arrive, and the Trending and Newest rows are loaded first\n  instead of every row starting at once, so the top of Home fills in sooner.\n- Improved: the update check no longer holds up the screen. It runs in the\n  background, so a slow or offline check never delays the first content you see.\n- Improved: rows now appear as soon as their data is ready. If a source is slow\n  to answer, Home shows what has already arrived and fills in the rest, instead\n  of waiting for the slowest source before showing anything.\n- Improved: carousels are more compact - cards are a little smaller with tighter\n  spacing, so more titles fit across each row (about three per row on the\n  compact theme and four on the default, up from two and three).\n- Fixed: a Home row no longer comes up empty when a source has changed its name;\n  the app falls back to showing the titles it received.\n- Fixed: a stalled response from a source no longer freezes the Trending row; the\n  app gives up after a short wait and moves on.\n- Note: no action needed on your part - just update and enjoy.\n",
       "releasedAt": "2026-10-16T11:14:32.599Z"
