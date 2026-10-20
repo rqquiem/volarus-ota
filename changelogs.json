@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.13",
+      "notes": "# v1.4.13 - faster Home, smoother scrolling, quicker launches\n\n- Improved: Home now opens with a limited number of cards per row instead of\n  every result at once, so it appears much faster. \"View All\" still opens the\n  full list.\n- Improved: listing responses are smaller, so Home loads faster on slow\n  connections.\n- Improved: repeat launches are near-instant - bundled app files are now kept\n  on your device instead of being re-checked every launch, while updates are\n  still checked each launch.\n- Improved: scrolling rows and the reader feel smoother - sideways row\n  scrolling and chapter restore no longer repeat unnecessary layout work every\n  frame.\n- Improved: Home and the rankings tabs now share one calculation per library\n  change instead of repeating it for each row, and duplicate background\n  requests are shared instead of fired twice.\n- Note: no action needed - just update.\n",
+      "releasedAt": "2026-10-20T14:32:48.934Z"
+    },
+    {
       "version": "1.4.12",
       "notes": "# v1.4.12 - a hotfix for empty Home rows\n\n- Fixed: Home rows could come up empty after the previous update, showing \"No\n  items found\" on every row. They now load normally again.\n- Fixed: if your device was already stuck on empty rows, it recovers on the next\n  launch - the app no longer remembers an empty result.\n- Improved: when the sources are slow, Home now offers a retry instead of\n  showing an empty row.\n- Note: no action needed on your part - just update.\n",
       "releasedAt": "2026-10-17T22:41:45.341Z"
