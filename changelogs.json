@@ -1,6 +1,11 @@
 {
   "entries": [
     {
+      "version": "1.4.16",
+      "notes": "# v1.4.16 - compact reading bar and correct covers when switching sources\n\n- Fixed: the reading bar no longer leaves an empty band above its controls. It\n  was reserving 28px for a status bar that many devices do not have, and that\n  Android hides entirely while reading, so the space was pure padding. It now\n  reserves only the inset the device actually reports.\n- Fixed: switching to another source now updates the title's cover. The image\n  was painted once when the page opened and never refreshed, so the previous\n  source's thumbnail stayed on screen even when the new source had none of its\n  own. Switching to a source without a cover now shows the placeholder instead\n  of the old image.\n- Fixed: the cover shown after a source switch is also the one saved to your\n  Library, so a title no longer keeps the wrong thumbnail after you bookmark it.\n- Note: no action needed - just update.\n",
+      "releasedAt": "2026-10-22T04:43:21.844Z"
+    },
+    {
       "version": "1.4.15",
       "notes": "# v1.4.15 - reader toolbar stays put, system bars hide while reading\n\n- Fixed: tapping the reader now brings the reading bar back every time. In the\n  App Store glass themes the bar had lost its fixed position and scrolled away\n  with the chapter, so the tap toggled something that was no longer on screen.\n- Fixed: the floating tab bar no longer leaves a sliver of itself visible at the\n  bottom of the reading screen.\n- Fixed: Android now hides the status and navigation bars properly while\n  reading, so the gesture pill no longer sits over the page. The bars come back\n  the moment you leave the reader.\n- Note: the system-bar fix is native, so it ships with the next APK. Everything\n  else arrives over the air.\n",
       "releasedAt": "2026-10-22T01:32:08.631Z"
