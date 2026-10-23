@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.16",
-  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.16/volarus-v1.4.16.zip",
-  "zipSha256": "9a4551db64e37c4d7d1dbccff63fb03b018d2c105ab13fb231dd5751c2a137c3",
-  "zipBytes": 1305668,
+  "version": "1.4.17",
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.17/volarus-v1.4.17.zip",
+  "zipSha256": "a64f2eed101871cd2bc46ca8984b3ef0393c4e8122964096c768d0ad0b50667f",
+  "zipBytes": 1306135,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.16 - compact reading bar and correct covers when switching sources\n\n- Fixed: the reading bar no longer leaves an empty band above its controls. It\n  was reserving 28px for a status bar that many devices do not have, and that\n  Android hides entirely while reading, so the space was pure padding. It now\n  reserves only the inset the device actually reports.\n- Fixed: switching to another source now updates the title's cover. The image\n  was painted once when the page opened and never refreshed, so the previous\n  source's thumbnail stayed on screen even when the new source had none of its\n  own. Switching to a source without a cover now shows the placeholder instead\n  of the old image.\n- Fixed: the cover shown after a source switch is also the one saved to your\n  Library, so a title no longer keeps the wrong thumbnail after you bookmark it.\n- Note: no action needed - just update.\n",
-  "releasedAt": "2026-10-22T04:43:21.844Z",
-  "signature": "KyNhLkEiiK7wo0cpSyEMYXU34Ouvt7us/a1avRisWC+9UdNKSPmjwrRMEBfERjklAvcCBwZx5/BagQZxMXRVDw=="
+  "notes": "# v1.4.17 - keep reading when the sync server is down\n\n- Fixed: if the sync server cannot be reached and you are not signed in, the app\n  used to show the full-screen sign-in screen with no way past it, so the reader\n  could not be used at all. It now explains that the sync server is unreachable\n  and offers \"Continue without an account\", so you can dismiss the screen and\n  keep reading.\n- Fixed: dismissing that screen also hides it for the rest of the session, so it\n  no longer reappears on every refresh while the server is still down.\n- Note: no action needed - just update. Your library, bookmarks and reading\n  progress stay on the device either way, and syncing resumes by itself once the\n  sync server is reachable again.",
+  "releasedAt": "2026-10-23T00:48:43.375Z",
+  "signature": "Rwp9Rh8u+vqEyWmyUcyzfepQugNcrMakqqCHlMkw5WmhntLOFNvUt9Hs6YAOlxXqaPiBxvghMtmyrKPz+CCxBQ=="
 }
