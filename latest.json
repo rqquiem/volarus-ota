@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "version": "1.4.17",
-  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.17/volarus-v1.4.17.zip",
-  "zipSha256": "a64f2eed101871cd2bc46ca8984b3ef0393c4e8122964096c768d0ad0b50667f",
-  "zipBytes": 1306135,
+  "version": "1.4.18",
+  "zipUrl": "https://github.com/rqquiem/volarus-ota/releases/download/v1.4.18/volarus-v1.4.18.zip",
+  "zipSha256": "73a24a61fa16ea3e10d5f325aa9b92ef12b882f4d95cc3d6acd4be026b1af449",
+  "zipBytes": 1308626,
   "minAppVersion": "1.2.11",
-  "notes": "# v1.4.17 - keep reading when the sync server is down\n\n- Fixed: if the sync server cannot be reached and you are not signed in, the app\n  used to show the full-screen sign-in screen with no way past it, so the reader\n  could not be used at all. It now explains that the sync server is unreachable\n  and offers \"Continue without an account\", so you can dismiss the screen and\n  keep reading.\n- Fixed: dismissing that screen also hides it for the rest of the session, so it\n  no longer reappears on every refresh while the server is still down.\n- Note: no action needed - just update. Your library, bookmarks and reading\n  progress stay on the device either way, and syncing resumes by itself once the\n  sync server is reachable again.",
-  "releasedAt": "2026-10-23T00:48:43.375Z",
-  "signature": "Rwp9Rh8u+vqEyWmyUcyzfepQugNcrMakqqCHlMkw5WmhntLOFNvUt9Hs6YAOlxXqaPiBxvghMtmyrKPz+CCxBQ=="
+  "notes": "# v1.4.18 - blocked sources can be unblocked from inside the app\n\n- Fixed: sources that sit behind a Cloudflare browser check (mgeko, toonily,\n  manhuatop, novelfull, royalroad, freewebnovel) used to look empty or partly\n  empty - a search came back with \"0 results\" and a title opened with no\n  chapters, even though the source has both. They now say that the source is\n  blocked and offer a \"Retry source\" button, so the problem is visible instead\n  of disguised as missing content.\n- Fixed: passing that browser check once in the app's built-in browser now\n  unlocks the source for every later request. The app keeps the access it\n  earned and presents it exactly as the browser that earned it did, so search\n  results, chapter lists and chapter pages all start working again without\n  repeating the check each time.\n- Fixed: covers from those sources now load too once the check has been passed,\n  instead of staying as grey placeholders while the rest of the source works.\n- Fixed: a source that genuinely fails upstream - an error page, a wrong\n  response, a temporary outage - is no longer shown as a source with nothing\n  in it. The app reports the actual failure, so \"this source has no results\"\n  and \"this source is not answering\" can no longer be mistaken for each other.\n- Fixed: fixing a blocked source no longer switches the app away from its\n  built-in fallback source for everything else. The fallback used to be turned\n  off app-wide the first time any source was blocked, which quietly made\n  results worse on unrelated titles for the rest of the session.\n- Fixed: a search that hits several blocked sources at once now runs the check\n  once per source and continues, instead of pausing or retrying each source\n  separately.\n- Note: no action needed - just update. If a source still shows as blocked\n  after updating, open it once from the button the app offers and it will stay\n  unlocked for later searches, titles and chapters.\n",
+  "releasedAt": "2026-10-27T23:59:34.244Z",
+  "signature": "8YpY+I8BV0Lq6mmmdFWXdd4x99u4nz4BWuNnHsrk1vxn2B+/YScGqoaz9njwWxai69zFvtQB1+Pox8x0JRNmDg=="
 }
